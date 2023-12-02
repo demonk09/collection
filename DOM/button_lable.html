@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+    }
+    div{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        transition:  background-color 0.4s ease-in;
+    }
+    button{
+        width: 100px;
+        height: 5vh;
+        border-radius: 5px;
+       
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <button onclick="fun(this)">red</button>
+    <button onclick="fun(this)">blue</button>
+    <button onclick="fun(this)">orange</button>
+    <button onclick="fun(this)">rgb(100,120,70)</button>
+    <button onclick="fun(this)">hsl(220,70% ,60%)</button>
+    <button onclick="fun(this)">#34f32a</button>
+    <button onclick="fun(this)">pink</button>
+    <button onclick="fun(this)">yellow</button>
+    <button onclick="fun(this)">black</button>
+</div>
+<script>
+    function fun(e) {
+        document.querySelector("div").style.backgroundColor=e.innerHTML
+        // document.querySelector("button").style.backgroundColor=e.innerHTML
+        
+    }
+</script>
+</body>
+</html>

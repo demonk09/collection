@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <div onclick="fun(this)" class="child1">Child 1</div>
+        <div onclick="fun(this)" class="child2">Child 2</div>
+        <div onclick="fun(this)" class="child3">Child 3</div>
+      </div>
+    <script>
+        const odd = document.querySelectorAll('#parent :nth-child(odd)');
+        function fun(e) {
+            if(e.odd){
+                e.style.color="red"
+            }
+            else if(e.even){
+                e.style.color="blue"
+            }
+        }
+       
+            
+    </script>
+</body>
+</html>

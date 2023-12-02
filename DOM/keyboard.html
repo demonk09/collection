@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .con {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+
+    .keyboard {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: blanchedalmond;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+
+
+    }
+
+    .first-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .second-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .third-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .fourth-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .first-row-button {
+        width: 6%;
+        height: 50px;
+        background: #36454F;
+        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 15px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .first-row-button-del {
+        width: 15%;
+        height: 50px;
+        background: #36454F;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .second-row-button {
+        width: 6%;
+        height: 50px;
+        background: #36454F;
+        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 15px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .second-row-button-tab {
+        width: 15%;
+        height: 50px;
+        background: #36454F;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+
+    .third-row-button {
+        width: 5.5%;
+        height: 50px;
+        background: #36454F;
+        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 15px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .third-row-button-caps,
+    .third-row-button-enter {
+        width: 16%;
+        height: 50px;
+        background: #36454F;
+        justify-content: center;
+        border: 1px solid white;
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .fourth-row-button {
+        width: 6%;
+        height: 50px;
+        background: #36454F;
+        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 15px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .fourth-row-button-shift {
+        width: 16%;
+        height: 50px;
+        background: #36454F;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid white;
+
+    }
+
+    .spacebar {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .Spacebar-button {
+        width: 60%;
+        height: 50px;
+        background: #36454F;
+        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 15px;
+        color: white;
+        border-radius: 5px;
+
+    }
+
+    .text-box {
+        display: flex;
+        width: 80%;
+        height: 7VH;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fr {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        color: blanchedalmond;
+        font-size: 20px;
+        text-align: right;
+    }
+</style>
+
+<body>
+    <div class="con">
+
+        <div class="keyboard">
+            <div class="first-row">
+                <div class="first-row-button" onclick="fun('')"><span>~</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>1</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>2</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>3</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>4</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>5</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>6</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>7</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>8</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>9</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>0</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>-</span></div>
+                <div class="first-row-button" onclick="fun('')"><span>+</span></div>
+                <div class="first-row-button-del" onclick="fun('')"><span>del</span></div>
+            </div>
+            <div class="second-row">
+                <div class="second-row-button-tab" onclick="fun('')"><span>tab</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>Q</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>W</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>E</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>R</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>T</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>Y</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>U</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>I</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>O</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>P</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>[</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>]</span></div>
+                <div class="second-row-button" onclick="fun('')"><span>|</span></div>
+            </div>
+            <div class="third-row">
+                <div class="third-row-button-caps" onclick="fun('')"><span>CapsLock</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>A</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>S</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>D</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>F</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>G</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>H</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>J</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>K</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>L</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>;</span></div>
+                <div class="third-row-button" onclick="fun('')"><span>'</span></div>
+                <div class="third-row-button-enter" onclick="fun('')"><span>ENTER</span></div>
+            </div>
+            <div class="fourth-row">
+                <div class="fourth-row-button-shift" onclick="fun('')"><span>Shift</span></div>
+                <div class="fourth-row-button" onclick="fun('')"><span>Z</span></div>
+                <div class="fourth-row-button" onclick="fun('')"><span>X</span></div>
+                <div class="fourth-row-button" onclick="fun('')"><span>C</span></div>
+                <div class="fourth-row-button" onclick="fun('')"><span>V</span></div>
+                <div class="fourth-row-button" onclick="fun('')"><span>B</span></div>
+                <div class="fourth-row-button" onclick="fun('')"><span>N</span></div>
+                <div class="fourth-row-button" onclick="fun('')"><span>M</span></div>
+                <div class="fourth-row-button" onclick="fun('')"><span>,</span></div>
+                <div class="fourth-row-button" onclick="fun('')"><span>.</span></div>
+                <div class="fourth-row-button-shift" onclick="fun('')"><span>Shift</span></div>
+            </div>
+            <div class="spacebar">
+                <div class="Spacebar-button" onclick="fun('')"><span>spacebar</span></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="text-box">
+        <input type="text" name="" id="fr">
+    </div>
+</body>
+
+</html>

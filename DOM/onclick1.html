@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="fun(this)" >Heading 1</h1>
+    <h1 onclick="fun(this)" >Heading 2</h1>
+    <h1 onclick="fun(this)" >Heading 3</h1>
+    <h1 ondblclick="fun2(this)" >Heading 4 activate on double click</h1>
+    <h1 onclick="fun(this)" >Heading 5</h1>
+    <script>
+        function fun(params) {
+            params.innerHTML="new content added"
+        }
+        function fun2(params1) {
+            params1.innerHTML="this is double click"
+        }
+    </script>
+</body>
+</html>

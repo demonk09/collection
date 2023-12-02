@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="con">
+    
+            <img src="images_M2/1.png" alt="">
+            <div class="banner">
+                <!-- <div class="text">
+                    <h4>TEXT1</h4>
+                </div> -->
+            </div>
+        </div>
+        <script>
+            let i=0
+            let a=['images_M2/1.png','images_M2/2.png','images_M2/3.png','images_M2/4.png','images_M2/5.png','images_M2/6.png']
+            let x=['TEXT1','TEXT2','TEXT3','TEXT4','TEXT5','TEXT6','TEXT7','TEXT8','TEXT19']
+            function fun() {
+                i++
+                if (i>=a.length) {
+                    i=0
+                }
+                document.getElementsByTagName('img')[0].src=a[i]
+                document.getElementsByClassName('text')[0].innerHTML=x[i]
+            }
+            setInterval(fun,100)
+        </script>
+</body>
+</html>

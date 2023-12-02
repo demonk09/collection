@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="id">
+    <button onclick="fun()">Add</button>
+    <div id="d1"></div>
+    <script>
+        let a = []
+        let tf = document.getElementById('id')
+        let df = document.getElementById('d1')
+
+        let fun = () => {
+            let li = document.createElement("li")
+            li.innerHTML = tf.value
+            df.appendChild(li)
+            tf.value = ""
+        }
+
+    </script>
+</body>
+
+</html>
